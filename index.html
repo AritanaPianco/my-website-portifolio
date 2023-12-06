@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Ari - web developer</title>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'background': "##f8f9fa",
+                'letter': '#90e0ef',
+                'darkBlue': '#10002b',
+                'blueMediun': '#46bcd1'
+              }, 
+              lineHeight: {
+                "themeSpace": '80px'
+              },
+              fontFamily: {
+                 'theme': ['Playfair Display']  
+              }, 
+              width: {
+                 'projectImg': '640px' 
+              }
+            }
+          }
+        }
+    </script>
+
+</head>
+<body class="bg-background">
+      
+      <main class="w-full flex flex-col items-center">
+            <div class="w-full h-screen flex justify-center items-center">
+                <div class="w-full max-w-6xl flex flex-col items-center lg:items-start gap-4">
+                     <h2 id="PresentationName" class="font-bold text-center lg:text-start text-3xl leading-wide lg:text-7xl max-w-6xl tracking-wide lg:leading-themeSpace">
+                         Olá, meu nome é <span class="text-letter">Aritana</span> e sou desenvolvedora web
+                    </h2>
+                     <a id="PresentationBtn" href="#about" class="text-md lg:text-lg text-blueMediun border-2 border-blueMediun font-bold  py-1 px-3">Saiba Mais</a>  
+                </div>     
+                
+            </div>
+            
+           <!--About me-->   
+           <div id="about" class="w-full flex lg:h-[630px] flex-col items-center mb-10 py-10 lg:py-0">
+               
+               <h2  id="title" class="text-center font-bold text-3xl lg:text-4xl text-white mb-5 -translate-y-5">Sobre mim</h2>
+               
+               <div class="w-full max-w-7xl flex flex-col lg:flex-row px-2 lg:px-16 items-center gap-5 lg:gap-20">
+                    <img id="myPhoto" class="block w-40 h-40 lg:w-80 lg:h-80  shadow-md lg:shadow-lg shadow-gray-600 object-cover" src="./assests/IMG_20231205_141624_188.webp" alt="profile"> 
+                    
+                    <div id="sobreMin" class="w-full flex flex-col lg:max-w-2xl gap-5">
+                        <p class="text-white text-center lg:text-start lg:max-w-xl text-sm lg:text-base font-medium tracking-wider">
+                           Sou uma desenvolvedora autodidata apaixonada pela criação de websites, aplicações web e mobile
+                           estou sempre aprendendo tecnologias novas e colocando-as em prática, tenho aprendido e usado 
+                           react, javascript, typescript, firebase, html, css, bootstrap e tailwind nos meus projetos. Meu lado pessoal é que
+                           sou muito adaptável e amigável, podendo me encaixar em qualquer time.
+                           
+                        </p>   
+                        <div class="flex flex-col gap-2 text-darkBlue font-medium">
+                            <span class="font-bold text-center lg:text-start">Minhas atuais Habilidades</span>                             
+                            <span class="uppercase text-sm lg:text-base text-center lg:text-start">
+                                HTML, CSS, Tailwind, Bootstrap, javascript, react, typescript,
+                                firebase, SQL, Nextjs.
+                                
+                            </span>
+                        </div>                          
+                    </div>
+
+                </div>  
+            </div>
+
+             <!--My projects-->
+            <div class="w-full flex flex-col items-center mb-20 mt-14 gap-20 text-darkBlue">
+                  <h2 class="font-bold text-3xl lg:text-4xl uppercase tracking-wider">Projetos</h2>
+                 <div class="w-full flex flex-col max-w-7xl items-center gap-20 lg:gap-32">
+
+                    <!-- lg:items-start -->
+                      <article class="flex flex-col items-center px-2 lg:flex-row gap-10 lg:gap-20">
+                            <div id="projectAbout" class="flex flex-col gap-5 lg:gap-10 lg:items-start">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="font-bold text-lg lg:text-xl">Clone Youtube Home Page</h2>                      
+                                    <p class="text-md font-medium max-w-[300px] text-slate-500">
+                                        Projeto responsivo feito em html e tailwind css,
+                                        apliquei técnicas de designer em layout dashboard.
+                                    </p>
+
+                                </div>
+                                <div class="flex gap-5 font-medium">
+                                    <a id="buttonLink" target="_blank" href="https://youtube-home-page-tailwind.vercel.app/" class="cursor-pointer text-sm lg:text-base text-blueMediun border-2 border-blueMediun py-1 px-7">Site</a>
+                                    <a id="buttonLink2" target="_blank" href="https://github.com/AritanaPianco/youtube-home-page-tailwind" class="cursor-pointer text-sm lg:text-base py-1 px-7">Código</a>
+                                </div>  
+                            </div>
+                           
+                            <div id="projectImg" class="max-w-projectImg lg:w-projectImg cursor-pointer shadow-lg shadow-gray-500">
+                                <a target="_blank" href="https://youtube-home-page-tailwind.vercel.app/">
+                                    <img  class="block object-cover" src="./projects/Browse thousands of Vector Portrait Line Art images for design inspiration.png" alt="youtube">
+                                </a>
+                            </div>  
+                      </article>  
+
+                      <article class="flex flex-col items-center px-2 lg:flex-row gap-10 lg:gap-20">
+                            <div id="projectAbout" class="flex flex-col gap-5 lg:gap-10 lg:items-start">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="font-bold text-lg lg:text-xl">GlacialModa</h2>                      
+                                    <p class="text-md font-medium max-w-[300px] text-slate-500">
+                                         GlacialModa é uma loja de roupas femininas para
+                                         o clima frio, o site esta totalmente responsivo
+                                         com modelos e sessões. 
+                                    </p>
+
+                                </div>
+                                <div class="flex gap-5 font-medium">
+                                    <a id="buttonLink" target="_blank" href="https://prototipo-site-fashion.vercel.app/" class="cursor-pointer text-sm lg:text-base text-blueMediun border-2 border-blueMediun py-1 px-7">Site</a>
+                                    <a id="buttonLink2" target="_blank" href="https://github.com/AritanaPianco/prototipo-site-fashion" class="cursor-pointer text-sm lg:text-base py-1 px-7">Código</a>
+                                </div>  
+                            </div>
+                           
+                            <div id="projectImg" class="max-w-projectImg lg:w-projectImg cursor-pointer shadow-lg shadow-gray-500">
+                                <a target="_blank" href="https://prototipo-site-fashion.vercel.app/">
+                                    <img class="block object-cover" src="./projects/Psychedelic astronaut with cocktail.png" alt="siteModa">
+                                </a>
+                            </div>  
+                      </article>  
+
+                    <article class="flex flex-col items-center px-2 lg:flex-row gap-10 lg:gap-20">
+                        <div id="projectAbout" class="flex flex-col gap-5 lg:gap-10 lg:items-start">
+                            <div class="flex flex-col gap-2">
+                                <h2 class="font-bold text-lg lg:text-xl">Clone Lading page Disney+</h2>                      
+                                <p class="text-md font-medium max-w-[300px] text-slate-500">
+                                     Projeto Lading page da disney+, nesse projeto
+                                     apliquei tácnicas de css grid e flex-box. 
+                                </p>
+
+                            </div>
+                            <div class="flex gap-5 font-medium">
+                                <a id="buttonLink" target="_blank" href="https://disney-plus-lading-page.vercel.app/" class="cursor-pointer text-sm lg:text-base text-blueMediun border-2 border-blueMediun py-1 px-7">Site</a>
+                                <a id="buttonLink2" target="_blank" href="https://github.com/AritanaPianco/disney-plus-lading-page" class="cursor-pointer text-sm lg:text-base py-1 px-7">Código</a>
+                            </div>  
+                        </div>
+                       
+                        <div id="projectImg" class="max-w-projectImg lg:w-projectImg cursor-pointer shadow-lg shadow-gray-500">
+                            <a target="_blank" href="https://disney-plus-lading-page.vercel.app/">
+                                <img class="block object-cover" src="./projects/plus 1.png" alt="Disney+">
+                            </a>
+                        </div>  
+                  </article>  
+
+                    <article class="flex flex-col items-center px-2 lg:flex-row gap-10 lg:gap-20">
+                        <div id="projectAbout" class="flex flex-col gap-5 lg:gap-10 lg:items-start">
+                            <div class="flex flex-col gap-2">
+                                <h2 class="font-bold text-lg lg:text-xl">Atech-blog</h2>                      
+                                <p class="text-md font-medium max-w-[300px] text-slate-500">
+                                     A Atech-blog é um blog de tecnologia onde 
+                                     usuários podem criar uma conta e publicar seus próprios 
+                                     posts sobre assuntos de tecnologia, projeto feito
+                                     em react e firebase.  
+                                </p>
+
+                            </div>
+                             <div class="flex gap-5 font-medium">
+                                 <a id="buttonLink" target="_blank" href="https://atech-blog.netlify.app/" class="cursor-pointer text-sm lg:text-base text-blueMediun border-2 border-blueMediun py-1 px-7">Site</a>
+                                 <a id="buttonLink2" target="_blank" href="https://github.com/AritanaPianco/atech-blog" class="cursor-pointer text-sm lg:text-base py-1 px-7">Código</a>
+                             </div>  
+                        </div>
+                       
+                         <div id="projectImg" class="max-w-projectImg lg:w-projectImg cursor-pointer shadow-lg shadow-gray-500">
+                             <a target="_blank" href="https://atech-blog.netlify.app/">
+                                <img class="block object-cover" src="./projects/Atech-log.png" alt="Disney+">
+                             </a>
+                         </div>  
+                  </article>  
+                      
+                </div>              
+            </div>
+            
+            <!--Contatos-->
+            <div id="contact" class="w-full h-[450px] flex flex-col items-center justify-center py-5">
+                <div class="w-full max-w-2xl items-center flex flex-col gap-7 lg:mt-5">
+                    <h2 class="text-2xl tracking-wider font-bold uppercase text-darkBlue">Meus Contatos</h2>
+                      <h2 class="font-bold uppercase text-white text-center">Gostaria de trabalhar comigo?</h2>    
+                     <div class="w-full flex flex-col gap-6 px-5 max-w-lg text-md lg:text-xl font-bold text-white">
+                          <a class="outline py-1 px-2 tracking-wide text-center" href="#">Email: aripianco10@gmail.com</a>
+                          <a class="outline py-1 px-2 tracking-wide text-center" href="#">Número: (98) 98155-9476</a>
+                     </div>     
+                 </div>   
+            </div>
+            
+            <!--Footer-->
+            <div class="w-full flex flex-col items-center bg-darkBlue py-12">
+                <div class="w-full flex max-w-4xl items-center justify-center gap-10 text-white">
+                     <a class="link py-2 px-2" target="_blank" href="https://www.linkedin.com/in/aritana-pianco/">
+                        <i class="ri-linkedin-box-fill text-3xl lg:text-4xl"></i>
+                     </a> 
+                     <a class="link py-2 px-2" target="_blank" href="https://github.com/AritanaPianco">
+                        <i class="ri-github-fill text-3xl lg:text-4xl"></i>
+                     </a>
+                </div>  
+            </div>
+
+      </main>      
+ 
+</body>
+</html>
